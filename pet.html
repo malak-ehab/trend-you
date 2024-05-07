@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Store</title>
+    <link rel="stylesheet" href="pet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="body">
+        <header>
+    <h1>Pet Store</h1>
+    <i class="fa fa-adjust"  id="dark-mode-toggle"></i>
+    <div id="mylist" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="./main page.html">Main Page</a><a href="./cart.html">Cart</a><a href="./profile.html">Profile Page</a>
+          <a href="./contantus.html">Contact US</a><a href="./3.html">About Us</a><a href="./practical 2.html">Women</a>
+          <a href="./men.html">Men</a> <a href="./2.html">Kids</a><a href="./shoes.html">Shoes</a> 
+          <a href="./self care.html">Selfcare</a> <a href="./accessories.html">Accessories</a><a href="./food1.html">Food</a> 
+          <a href="./pet.html">Pet Supplies</a> <a href="./toys.html">Toys</a><a href="./main.html">Electronics</a> 
+      </div>
+      <div id="main">
+      <i onclick="openNav()" id="list" class="glyphicon glyphicon-list openbtn"></i>  
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mylist").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mylist").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+        </header>
+    <div class="pet-cards" >
+        <!-- Pet cards will be dynamically generated here -->
+    </div>
+
+    <script src="pet.js"></script>
+   </div>
+    <footer>
+        <h2>Waiting For You On Our Instagram Page</h2>
+        <i id="inst" class="fa fa-instagram"></i>
+        <h4>@TRENDYYOU</h4>
+        <br>
+        <p id="foot">Thank You For Visiting Our Website</p>
+       </footer>
+</body>
+</html>

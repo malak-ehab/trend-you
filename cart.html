@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="profile.js"></script>
+    <style>
+    .iframe{
+        position: fixed;
+        float:right;
+        top:590px;
+        left:1170px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+    <div class="header">
+        <i class="fa fa-adjust"  id="dark-mode-toggle"></i>
+        <div id="mylist" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="./main page.html">Main Page</a><a href="./cart.html">Cart</a><a href="./profile.html">Profile Page</a>
+          <a href="./contantus.html">Contact US</a><a href="./3.html">About Us</a><a href="./practical 2.html">Women</a>
+          <a href="./men.html">Men</a> <a href="./2.html">Kids</a><a href="./shoes.html">Shoes</a> 
+          <a href="./self care.html">Selfcare</a> <a href="./accessories.html">Accessories</a><a href="./food1.html">Food</a> 
+          <a href="./pet.html">Pet Supplies</a> <a href="./toys.html">Toys</a><a href="./main.html">Electronics</a> 
+        </div>
+        <div id="main">
+        <i onclick="openNav()" id="list" class="glyphicon glyphicon-list openbtn"></i>  
+        </div>
+        
+        <script>
+        function openNav() {
+          document.getElementById("mylist").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mylist").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+    <div class="container">
+        <form action="" method="get" >
+            <h1 class="main_heading">Payment Form
+            </h1>
+            <hr>
+            <h2>User Information</h2>
+
+            <p>
+                Name:* : <input type="text" required name="name" placeholder="Enter your name" required>
+
+            </p>
+            <p>
+                Contact no:* <input type="number" name="contact no" id="contact no" required placeholder="987654#####">
+            </p>
+            <p>
+                Email:* <input type="email" name="email" id="email" required placeholder="...@gmail.com">
+            </p>
+            <p>
+                <fieldset>
+                    <legend >Gender
+                    </legend>
+                    <input type="radio" name='gender' id="gender" required> male
+                    <input type="radio" name='gender' id="gender" required>female
+                    <input type="radio" name='gender' id="gender" required>other
+                </fieldset>
+            </p>
+            <p>
+                Password: <input type="password" name="password" id="password" required placeholder="********">
+                <p>
+                    Address:
+                    <input type="text" placeholder="Enter your address" name="Address" id="Address" >
+
+                </p>
+                <p>
+                    Pincode:
+                    <input type="number" name="Pincode" id="Pincode" required placeholder="#######">
+                </p>
+            </p>
+            <hr>
+            <h2>
+                Payment information
+            </h2>
+            <p>
+
+            </p>
+            <p>
+                <p>Card type:</p>
+                <select name="card type" id="card type">
+                    <p>
+        card type:</p>
+        <option>-------select your card type-------</option>
+        <option value="visa">visa</option required>
+        <option value="rupay">rupay</option required>
+        <option value="mastercard">mastercard</option required>
+        </select>
+            </p>
+            </p>
+            <p>
+                Card Number*:
+                <input type="number" name="card number" id="Card Number" required placeholder="1111-2222-5555-8888">
+            </p>
+            <p>
+                Expiration Date:
+                <input type="date" name="expiration date" id="Epiration Date">
+            </p>
+            <p>
+                CVV:<input type="number " name="CVV " id="CVV " required placeholder="Enter your cvv">
+            </p>
+            <p>
+                Pin:<input type="password " name="Pin " id="pin " required placeholder="123">
+            </p>
+            <p>
+                <input type="submit" name="submit" id="submit" required placeholder="paynow" value="Pay now">
+            </p>
+        </form>
+        </div>
+                <script>
+document.getElementById("submit").addEventListener("click", function() {
+  alert("Payment completed successfully");
+});
+</script>
+<div class="iframe">
+<iframe src="sales.html" style="border: none;" width="300px" height="200px"></iframe>
+</div>
+</div>
+<footer>
+    <h2>Waiting For You On Our Instagram Page</h2>
+    <i id="inst" class="fa fa-instagram"></i>
+    <h4>@TRENDYYOU</h4>
+    <br>
+    <p id="foot">Thank You For Visiting Our Website</p>
+   </footer>
+
+</body>
+
+</html>

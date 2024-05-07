@@ -1,0 +1,355 @@
+ *{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-color:#EBE1D1;
+    font-family:san-serif;
+ z-index:1;
+
+}
+.body{
+ background-color:#EBE1D1;
+}
+header{
+  
+    width:100%;
+    background-color: #D3C3B2;
+    color:#815423;
+    text-align:center;
+    padding:20px;
+    border:dotted;
+   
+  
+    align-items: center;
+   font-size: 30px;
+    z-index:1;
+   
+} 
+
+.icon{
+    text-align:center; 
+  
+    
+}
+
+.col{
+   
+  /*  border:1px solid brown;
+    border-color:#815423;   */
+    text-indent:3px;
+    color:#815423;
+    /* text-align:center; */
+    font-size:1rem;
+    grid-column-gap:10px ; 
+}
+label{
+    color:#815423;
+    
+}
+#account-icon{
+    font-size:20rem;
+    transform:translate(0, -15%); 
+    z-index:1;
+    color:#815423;
+    
+}
+.icon{
+    transform:translate(0, -63%);
+}
+table, th, td{
+  color:#815423;
+  
+  font-size:20px;
+  
+    
+    padding-top:0px;
+    padding-left:20px;
+    padding-right:20px;
+    border-collapse: collapse;
+    
+}
+ table,td{
+    /* border:1px solid brown; */
+   /* background-color:#D3C3B2; */
+  /*  box-shadow:2px 2px 5px 2px brown; */
+ 
+   border-radius:20pw;
+   border-collapse: collapse;
+   margin-right:10px;
+   justify-content: space-around;
+ 
+
+  
+}
+table{
+  display:block ;
+}
+
+h3{
+    border-bottom:1px solid brown;
+    text-shadow: 2px 2px 5px brown;
+    display:inline-block;
+    font-size:15px;
+}
+#avatar{
+   
+    border: 1px solid brown;
+    position:absolute;
+    margin-left: 20px;
+    text-align: center;
+     color:#EBE1D1;
+     background-color:#D3C3B2;
+     width:25%;
+     box-shadow:2px 2px 5px 2px brown;
+     padding-bottom:120px;
+     margin-top:80px;
+}    
+ .first{
+    border:1px solid black;
+    background-color:white;
+    text-indent:5px;
+    border-radius:20px ;
+    /* border-collapse: collapse; */
+} 
+.f{
+    border:1px solid black;
+    width :100%;
+}
+
+.m{
+    /* width:100% ; */
+     width:40%; 
+}
+.img{
+    border:1px transparent;
+    border-radius:20px;
+    width: 100%;
+    height :140px;
+    z-index:-99;
+   
+}
+.p{
+     margin-left:53%; 
+    font-size:30px;
+    color:#815423;
+}
+/* dark mode */
+.dark-mode {
+  background-color:black;
+  color: white;
+
+}
+.dark-mode header,.dark-mode .p,.dark-mode footer,.dark-mode h2,.dark-mode .body{
+    color: white;
+    background-color:#1E1C1F;
+}
+.dark-mode li a{
+    color: white;
+}
+.dark-mode body{
+    background-color: #1E1C1F;}
+.dark-mode .price{
+    color:white;
+}
+.dark-mode .table {
+     background-color: black; 
+     color: white;
+     border:2px solid ;
+    border-color:#BA55D3;
+}
+.dark-mode .column,.dark-mode table{
+    background-color: black; 
+     color: white;
+}
+.dark-mode .t{
+    border:2px solid ;
+    border-color:#BA55D3;
+}
+.dark-mode .first,.dark-mode .mariam {
+    background-color: black;
+    color:#BA55D3 ;
+    /* border:2px solid ; */
+    border-color:#BA55D3;
+}
+.dark-mode table td{
+    color:#BA55D3 ;
+}
+.dark-mode #mylist{ 
+    background-color:#BA55D3;  
+  }
+.dark-mode .date{
+    color: white;
+}
+.dark-mode #account-icon{
+    color:white;
+}
+.dark-mode a{
+    color:white;
+    background-color:#BA55D3 ;
+}
+.dark-mode .m{
+    background-color:black;
+    color:white;
+    border:2px solid ;
+    border-color:#BA55D3;
+}
+#dark-mode-toggle{
+    float:right;
+    font-size:50px;
+    
+}
+.dark-mode #dark-mode-toggle{
+    color:#BA55D3;
+}
+.dark-mode #list{
+    color:#BA55D3;
+}
+ /*  */
+ .table{
+     border:1px solid transparent;
+     margin-top:160px;
+     width:90%;
+     margin-left:70px;
+     text-align:center;
+     /* position: absolute;   */
+    justify-content: center;
+    border-radius:20px;
+    background-color: #D3C3B2;
+   
+   
+ }
+ .mariam{ 
+ /* transform:translate(0%, -360%); */ 
+font-size:40px;
+color:#815423;
+}
+.t{
+    width:90%;
+     /* display: grid;
+   grid-template-columns:auto auto;
+   grid-template-rows: auto auto auto; */ 
+    
+   /* float: right;  */
+  display: inline-block;
+   border:1px solid brown;
+   margin-left:70px;
+   text-align: center;
+ 
+ background-color: #D3C3B2; 
+  border-radius:20px;
+}
+table .t td{
+    padding-bottom:100px;
+}
+ .image {
+    width:40%;
+} 
+
+.orders{
+    margin-top:70px;
+    font-size:70px;
+}
+.total{
+    border-top:1px solid brown ;
+}
+.log{
+    padding:10px;
+   background-color:#815423 ;
+   color:#D3C3B2 ;
+   
+   float:right;
+}
+.log a{
+    width:55%;
+    color:#D3C3B2 ;
+    
+}
+.log a:hover{
+   background-color:#EBE1D1;
+   color:#D3C3B2 ;
+}
+.log a:visited{
+   background-color:#EBE1D1;
+   color:#D3C3B2 ;
+}
+ .date{
+     color:black;
+ }
+ .o{
+     border-bottom:1px solid brown;
+    text-shadow: 2px 2px 5px brown;
+    font-size: 50px;
+    display: inline-block;
+ }
+ img:hover{opacity:0.6;}
+ footer{
+    margin-top: 20px;
+    color:#815423;
+    background-color:#d3c3b2;
+    align-content: center;
+    text-align: center;
+    width:100%;
+    height:200px;
+}
+#list{
+    position:absolute;
+    top:8px;
+    left:16px;
+    font-size:30px;
+    color:#815423;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #815423;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ebe1d1;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  .h22{
+    text-align: center;
+    color:#815423;
+  }
+  #inst{
+    font-size:30px;
+}
+#dark-mode-toggle{
+    position:absolute;
+    top:8px;
+    right: 16px;
+    font-size:40px;
+    color:#815423;
+}

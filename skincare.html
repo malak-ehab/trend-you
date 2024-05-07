@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skincare</title>
+    <link rel="stylesheet" href="skincare.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="C:\Users\Malak\OneDrive - Faculty of Computers and Information\Desktop\it project\profile.js"></script>
+    <style>
+        body {
+            background-color: #ebe1d1;
+            overflow-x: hidden;
+        }
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+            background-color: #d3c3b2;
+            z-index: 1000; 
+            box-sizing: border-box; 
+            padding: 10px; 
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            padding-top: 80px; 
+        }
+        .column {
+            margin: 10px;
+            text-align: center;
+            width: 300px; 
+        }
+        .header h1{
+            font-size: 400%;
+            font-style: italic;
+        }  
+    </style>
+</head>
+<body>
+    <div class="header">
+        <i class="fa fa-adjust"  id="dark-mode-toggle"></i>
+        <div id="mylist" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="./main page.html">Main Page</a><a href="./cart.html">Cart</a><a href="./profile.html">Profile Page</a>
+          <a href="./contantus.html">Contact US</a><a href="./3.html">About Us</a><a href="./practical 2.html">Women</a>
+          <a href="./men.html">Men</a> <a href="./2.html">Kids</a><a href="./shoes.html">Shoes</a> 
+          <a href="./self care.html">Selfcare</a> <a href="./accessories.html">Accessories</a><a href="./food1.html">Food</a> 
+          <a href="./pet.html">Pet Supplies</a> <a href="./toys.html">Toys</a><a href="./main.html">Electronics</a> 
+          </div>
+          <div id="main">
+          <i onclick="openNav()" id="list" class="glyphicon glyphicon-list openbtn"></i>  
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mylist").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mylist").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+        <h1 >SKIN CARE</h1>
+    </div>
+    <div class="row"class="x">
+        <div class="column">
+            <div>
+                <img src="photos/face moisturizer.webp" alt="Face Moisturizer">
+                <br>
+            </div>
+            <p>350 L.E</p>
+            <p class="skincare">face moisturizer</p>
+            <a href="cart.css" class="button">Add to Cart</a>
+        </div>
+        <div class="column">
+            <div>
+                <img src="photos/face mask.webp" alt="Face Mask">
+                <br>
+               
+            </div>
+            <p>180 L.E</p>
+            <p class="skincare">Face mask</p>
+            <a href="cart.html" class="button">Add to Cart</a>
+        </div>
+        <div class="column">
+            <div>
+                <img src="photos/hayluron expert seurm.webp" alt="Hayluron Serum" width="220" height="220">
+                <br>
+               
+            </div>
+            <p>740 L.E</p>
+            <p class="skincare">hayluron serum</p>
+            <a href="cart.html" class="button">Add to Cart</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div>
+                <img src="photos/face toner for normal to combination skin.webp" alt="Face Toner" width="220" height="220">
+                <br>
+               
+            </div>
+            <p>660 L.E</p>
+            <p class="skincare">Face toner</p>
+            <a href="cart.html" class="button">Add to Cart</a>
+        </div>
+        <div class="column">
+            <div>
+                <img src="photos/micellar water.png" width="220" height="220">
+                <br>
+                
+            </div>
+            <p>400 L.E</p>
+            <p class="skincare">micellar water</p>
+            <a href="cart.html" class="button">Add to cart</a>
+        </div>
+        <div class="column">
+            <div>
+                <img src="photos/gel-wash.webp" width="220" height="220">
+                <br>
+            </div>
+            <p>360 L.E</p>
+            <p class="skincare">Gel wash</p>
+            <a href="cart.css" class="button">Add to cart</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div>
+                <img src="photos/eye-cream.webp" width="220" height="220">
+                <br>
+            </div>
+            <p>450 L.E</p>
+            <p class="skincare">Eye cream</p>
+            <a href="cart.css" class="button">Add to cart</a>
+        </div>
+        <div class="column">
+            <div>
+                <img src="photos/eye-serum-hero.webp" width="220" height="220">
+                <br>
+            </div>
+            <p>360 L.E</p>
+            <p class="skincare">Eye serum</p>
+            <a href="cart.html" class="button">Add to cart</a>
+        </div>
+        </div>
+        <footer>
+            <h2 class="foot">Waiting For You On Our Instagram Page</h2>
+            <i id="inst" class="fa fa-instagram"></i>
+            <h4>@TRENDYYOU</h4>
+            <br>
+            <p id="foot">Thank You For Visiting Our Website</p>
+           </footer>
+</body>
+</html>

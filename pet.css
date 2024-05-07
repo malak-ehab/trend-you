@@ -1,0 +1,195 @@
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #ebe1d1; /* Lightest color */
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    width: 100%;
+    color: #815423; /* Darkest color */
+    text-align: center;
+    padding:20px;
+    background-color: #d3c3b2;
+    position: fixed;
+   
+}
+.pet-cards {
+    padding-top:120px ;
+    text-align: center; /* Center pet cards horizontally */
+    
+}
+
+.category {
+     /* Second lightest color */
+    /* Subtle shadow effect */
+    padding: 10px 20px; /* Padding for category */
+    margin: 20px auto; /* Margin for category */
+    width: 80%; /* Adjust the width as needed */
+    max-width: 500px; /* Maximum width for the category card */
+    text-align: center;
+    font-size: 40px; /* Larger font size for the category */
+    color: #815423; /* Darkest color */
+}
+
+.pet-card {
+    display: inline-block; /* Display pet cards side by side */
+    /* Second lightest color */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 10px auto;
+    padding: 20px;
+    width: 300px; /* Fixed width for the pet cards */
+    text-align: center;
+}
+
+.pet-card img {
+    width: 200px; /* Fixed width for the pet images */
+    height: 200px; /* Fixed height for the pet images */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.pet-card h3 {
+    color: #815423; /* Dark gray color for pet names */
+    margin-top: 10px;
+}
+
+.pet-card p {
+    color: #815423; /* Medium gray color for pet descriptions */
+    margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+    background-color: #815423; /* Second darkest color */
+    color: #ebe1d1; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.add-to-cart-btn:hover {
+    background-color: #d3c3b2; /* Darker shade on hover */
+}
+#list{
+    position:absolute;
+    top:8px;
+    left:16px;
+    font-size:30px;
+    color:#815423;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #815423;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ebe1d1;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  footer{
+    color:#815423;
+    background-color:#d3c3b2;
+    align-content: center;
+    text-align: center;
+    width:100%;
+    height:200px;
+}
+#inst{
+    font-size:30px;
+}
+.dark-mode {
+    background-color:black;
+    color: white;
+  
+  }
+  .dark-mode header{
+      color: white;
+      background-color:#1E1C1F;
+  }
+  .dark-mode li a{
+      color: white;
+  }
+  .dark-mode .price{
+      color:white;
+  }
+  .dark-mode .pet-cards p{
+   color:#BA55D3;
+  }
+  .dark-mode .pet-card h3{
+      color:white;
+  }
+  .dark-mode .body{
+      background-color:black;
+      color:white;
+    
+  }
+  #dark-mode-toggle{
+      
+      font-size:40px;
+      position: absolute;
+      top:8px;
+      right: 16px;
+      
+  }
+  .dark-mode #dark-mode-toggle{
+      color:#BA55D3;
+  }
+  .dark-mode #list{
+      color:#BA55D3;
+  }
+  .dark-mode #mylist{ 
+    background-color:#BA55D3;  
+  }
+   
+  .dark-mode footer,.dark-mode #foot,.dark-mode ul,.dark-mode li{
+      color:white;
+      background-color: #1E1C1F;
+  }
+  .dark-mode .shop,.dark-mode .shop a{
+      background-color:#BA55D3;
+      color:white;
+  }
+  .shop a{
+      color:#D3C3B2 ;
+  }
+  .dark-mode .category{
+      color:#BA55D3;
+  }
+  .dark-mode .add-to-cart-btn{
+      background-color:#BA55D3;
+      color:white;
+  }

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us Form</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        font-family: Arial;
+        background-color:#ebe1d1;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #d3c3b2;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #815423;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color:#815423;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    textarea {
+        height: 150px;
+    }
+    input[type="submit"] {
+        background-color:#815423;
+        color: #ebe1d1;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover {
+        background-color:#b79677;
+    }
+    .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #815423;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ebe1d1;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  #list{
+    position:absolute;
+    top:8px;
+    left:16px;
+    font-size:30px;
+    color: #815423;
+}
+
+footer{
+    background-color:#d3c3b2;
+    color:#815423;
+    align-content: center;
+    width:100%;
+    text-align: center;
+    height:182px;
+    margin-top:30px;
+}
+.foot{
+  font-size:32px;
+  padding-bottom: 0%;
+}
+#inst{
+  font-size:30px;
+}
+.dark-mode {
+  background-color:black;
+  color: white;
+
+}
+.dark-mode .header{
+    color: white;
+    background-color:#1E1C1F;
+}
+.dark-mode{
+    background-color:black;
+}
+.dark-mode p{
+    color:#BA55D3;
+    /* background-color:#1E1C1F; */
+}
+.dark-mode nav{
+    color: white;
+    background-color:#1E1C1F;
+}
+.dark-mode li a{
+    color: white;
+}
+
+.dark-mode .image4{
+    border:solid #BA55D3 1px ;
+     background-color:#BA55D3 ;  
+}
+.dark-mode .image{
+    padding:20px;
+     background-color:#BA55D3 ;  
+     border:solid #BA55D3 5px ;
+}
+
+
+#dark-mode-toggle{
+   
+    position:absolute;
+    top:8px;
+    right: 16px;
+    font-size:40px;
+    color:#815423;
+
+  
+}
+.dark-mode #dark-mode-toggle{
+    color:#BA55D3;
+}
+.dark-mode #list{
+    color:#BA55D3;
+}
+
+.dark-mode .button {
+    background-color:#BA55D3;
+}
+.dark-mode footer{
+    color:white;
+    background-color: #1E1C1F;
+}
+.dark-mode #foot{
+    color:white;
+}
+.dark-mode #link,.dark-mode h1{
+    color:white;
+}
+.dark-mode #mylist{ 
+  background-color:#BA55D3;  
+}
+.dark-mode h2{
+     color:white;
+}
+.dark-mode .hf{
+    background-color:#BA55D3; 
+}
+
+.dark-mode fieldset {
+  color:#BA55D3;
+    
+    width: 800px;
+}
+
+.dark-mode legend
+{
+    
+    color:white;
+    
+}
+.dark-mode .container {
+   
+background-color:black;
+    color:#BA55D3;
+    box-shadow: 0 0 10px #BA55D3;
+}
+.dark-mode p{
+  color:#BA55D3;
+}
+
+.dark-mode .body{
+    background-color:black;
+}
+.dark-mode input[type=submit] {
+    background-color:#BA55D3;
+    color:white;
+}
+.dark-mode label {
+    color:#BA55D3;
+}
+</style>
+<script>
+function validateForm() {
+    let name = document.forms["contactForm"]["name"].value;
+    let email = document.forms["contactForm"]["email"].value;
+    let message = document.forms["contactForm"]["message"].value;
+
+    if (name == "" || email == "" || message == "") {
+        alert("Please fill in all fields");
+        return false;
+    }
+    alert("Your message has been submitted");
+    return true;
+}
+</script>
+<script src="profile.js"></script>
+</head>
+<body>
+<i class="fa fa-adjust"  id="dark-mode-toggle"></i>
+<div id="mylist" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="./main page.html">Main Page</a><a href="./cart.html">Cart</a><a href="./profile.html">Profile Page</a>
+          <a href="./contantus.html">Contact US</a><a href="./3.html">About Us</a><a href="./practical 2.html">Women</a>
+          <a href="./men.html">Men</a> <a href="./2.html">Kids</a><a href="./shoes.html">Shoes</a> 
+          <a href="./self care.html">Selfcare</a> <a href="./accessories.html">Accessories</a><a href="./food1.html">Food</a> 
+          <a href="./pet.html">Pet Supplies</a> <a href="./toys.html">Toys</a><a href="./main.html">Electronics</a> 
+</div>
+<div id="main">
+    <i onclick="openNav()" id="list" class="glyphicon glyphicon-list openbtn"></i>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mylist").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mylist").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<div class="container">
+    <h2>Contact Us</h2>
+    <form name="contactForm" action="#" onsubmit="return validateForm()" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required value="">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required value="">
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<footer>
+    <h2 class="foot">Waiting For You On Our Instagram Page</h2>
+    <i id="inst" class="fa fa-instagram"></i>
+    <h4>@TRENDYYOU</h4>
+    <br>
+    <p id="foot">Thank You For Visiting Our Website</p>
+   </footer>
+
+</body>
+</html>

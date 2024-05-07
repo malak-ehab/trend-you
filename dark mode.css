@@ -1,0 +1,44 @@
+.dark-mode ,.dark-mode #pic ,.dark-mode #picture {
+  background-color:black;
+  color: white;
+
+}
+.dark-mode header , .dark-mode ul , .dark-mode footer{
+    color: white;
+    background-color:#1E1C1F;
+}
+.dark-mode li a{
+    color: white;
+}
+.dark-mode .price{
+    color:white;
+}
+.dark-mode #mylist{ 
+    background-color:#BA55D3;  
+  }
+.dark-mode .cart{
+    background-color:#BA55D3;
+}
+.dark-mode .cart a{
+    color:white;
+}
+.dark-mode .m{
+    background-color:black;
+    color:white;
+    border:2px solid ;
+    border-color:#BA55D3;
+}
+#dark-mode-toggle{
+        position:absolute;
+        top:8px;
+        right: 16px;
+        font-size:40px;
+        color:#815423;
+}
+.dark-mode #dark-mode-toggle{
+    color:#BA55D3;
+}
+.dark-mode #list{
+    color:#BA55D3;
+}
+ 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="C:\Users\Malak\OneDrive - Faculty of Computers and Information\Desktop\it project\profile.js"></script>
+<head>
+    <title>self care</title>
+    <link rel="stylesheet" href="self care.css">
+    <style>
+        body {
+            background-color:#ebe1d1;
+            overflow-x: hidden;
+        }
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+            background-color: #d3c3b2;
+            box-sizing: border-box; 
+            padding-bottom:10px;
+            padding-top:10px;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            padding-top: 50px; 
+        }
+        .column {
+            margin: 10px;
+            text-align: center;
+        }
+        .header h1{
+            font-size: 400%;
+            font-style: italic;
+        }  
+        </style>
+</head>
+<body>
+    <div class="header">
+        <i class="fa fa-adjust"  id="dark-mode-toggle"></i>
+        <div id="mylist" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="./main page.html">Main Page</a><a href="./cart.html">Cart</a><a href="./profile.html">Profile Page</a>
+          <a href="./contantus.html">Contact US</a><a href="./3.html">About Us</a><a href="./practical 2.html">Women</a>
+          <a href="./men.html">Men</a> <a href="./2.html">Kids</a><a href="./shoes.html">Shoes</a> 
+          <a href="./self care.html">Selfcare</a> <a href="./accessories.html">Accessories</a><a href="./food1.html">Food</a> 
+          <a href="./pet.html">Pet Supplies</a> <a href="./toys.html">Toys</a><a href="./main.html">Electronics</a> 
+          </div>
+          <div id="main">
+          <i onclick="openNav()" id="list" class="glyphicon glyphicon-list openbtn"></i>  
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mylist").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mylist").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+        <h1 >SELF CARE</h1>
+    </div>
+    <div class="body">
+    <div class="row"class="x">
+        <div class="column">
+            <div>
+                
+                <img src="photos/makeup2.avif" width="300" height="400">
+                <br>
+                <br>
+                <a href="makeup.html" class="button">Makeup</a>
+            </div>
+            </div>
+            <div class="column">
+            <div>
+                <img src="photos/skincare.avif" width="300" height="400">
+                <br>
+                <br>
+                <a href="skincare.html" class="button">Skin care</a>
+            </div>
+                </div>
+                <div class="column">
+            <div>
+                <img src="photos/hair.jpg" width="300" height="400">
+                <br>
+                <br>
+                <a href="haircare.html" class="button">Hair care</a>
+            </div>
+                </div>
+                
+</div>
+<footer>
+    <h2 class="foot">Waiting For You On Our Instagram Page</h2>
+    <i id="inst" class="fa fa-instagram"></i>
+    <h4>@TRENDYYOU</h4>
+    <br>
+    <p id="foot">Thank You For Visiting Our Website</p>
+   </footer>
+</div>
+</body>

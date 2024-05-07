@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta thhp-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport"
+content="width=device-width initial-scale=1.0">
+<link rel="stylesheet" href="food1.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="profile.js"></script>
+    <title>food</title>
+</head>
+<style>
+       .dark-mode {
+  background-color:black;
+  color: white;
+
+}
+.dark-mode #pic,.dark-mode .n{
+    color: white;
+    background-color:#1E1C1F;
+}
+.dark-mode #fresh,.dark-mode #fruit,.dark-mode #bakery,.dark-mode #snacks{
+    color: white;
+}
+.dark-mode nav{
+    color: white;
+    background-color:#1E1C1F;
+}
+.dark-mode li a{
+    color: white;
+}
+
+.dark-mode a{
+    color:white;
+     /* background-color:#BA55D3 ;  */
+}
+
+#dark-mode-toggle{
+   
+    /* position:absolute; */
+    top:8px;
+    right: 16px;
+    font-size:40px;
+    color:#815423;
+    float: right;
+
+  
+}
+.dark-mode #dark-mode-toggle{
+    color:#BA55D3;
+}
+.dark-mode #list{
+    color:#BA55D3;
+}
+
+.dark-mode .button {
+    background-color:#BA55D3;
+}
+.dark-mode footer,.dark-mode .foot{
+    color:white;
+    background-color: #1E1C1F;
+}
+.dark-mode #link,.dark-mode h1{
+    color:white;
+}
+.dark-mode #mylist{ 
+  background-color:#BA55D3;  
+}
+.dark-mode .price{
+    color:white;
+}
+.dark-mode .k{
+    color:white;
+    border:1px solid;
+    border-color:#BA55D3;
+}
+.dark-mode .cart{
+    background-color:#BA55D3;
+    color:white;
+}
+/*  */
+
+</style>
+<body>
+    
+ <header id="pic">
+     <i class="fa fa-adjust"  id="dark-mode-toggle"></i>
+  <div id="mylist" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="./main page.html">Main Page</a><a href="./cart.html">Cart</a><a href="./profile.html">Profile Page</a>
+          <a href="./contantus.html">Contact US</a><a href="./3.html">About Us</a><a href="./practical 2.html">Women</a>
+          <a href="./men.html">Men</a> <a href="./2.html">Kids</a><a href="./shoes.html">Shoes</a> 
+          <a href="./self care.html">Selfcare</a> <a href="./accessories.html">Accessories</a><a href="./food1.html">Food</a> 
+          <a href="./pet.html">Pet Supplies</a> <a href="./toys.html">Toys</a><a href="./main.html">Electronics</a>  
+  </div>
+  <div id="main">
+  <i onclick="openNav()" id="list" class="glyphicon glyphicon-list openbtn"></i>  
+  </div>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mylist").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mylist").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+     
+  <h1 id="food"> FOOD</h1>
+  <ul class="n">
+<li> <a href="#fresh" class="f">
+<b>Fresh food</b></a></li>
+<li><a href="#fruit" class="f"><b>fruits & vegetables</b></a></li> <li><a href="#snacks" class="f"><b>snacks & drinks</b></a>
+  </li>
+<li>
+  <a href="#bakery" class="f"><b>bakery</b></a></li>
+ 
+ </ul> 
+  </header>
+  <div id="pad" class="nav">
+          </div>
+ <br>
+  <!-- <img src="img/download (21).jpeg"class="img">
+ <p id="shop"><b>SHOP NOW</b></P> -->
+
+ <h2 id="fresh">FRESH FOOD</h2>
+
+ <!-- <p class="off">13% OFF</p> -->
+ <section id="s">
+ <div class="column1"><img src="images/kiri.jpeg">
+ <p class="price"><b>110.00 EGB</b> <del>127.00 EGB</del></p>
+ <p class="k"><b>Kiri Creamy Labneh<br>-350 gm</b></p>
+ <br>
+ <a href="cart.html"  class="cart">add to cart</a>
+ </div> 
+ <div class="column2"><img src="images/1700Wx1700H_482313_main.jpg"></img><p class="price"><b>82.00 EGB</b></p><p class="k"><b>La Vache Qui Rit Triangle Cheese <br>-32 pieces </b></p><br><a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ <div class="column3"><img src="images/laban.jpg"><p class="price"><b>46.00 EGB</p><p class="k">Almarai Full Cream Milk<br>-1 liter</b></p><br><a href="cart.html"  class="cart">add to cart</a></div>
+ </section>
+ <section id="s">
+  <div class="column1"><img src="images/labab b5ero.jpeg">
+ <p class="price"><b>30.30 EGB</b></p>
+ <p class="k"><b>Bekhero Full Cream Milk<br>-1 liter</b></p>
+ <br>
+ <a href="add to cart"  class="cart">add to cart</a>
+ </div><div class="column2"><img src="images/mozzarella.jpeg"></img><p class="price" ><b>130.00 EGB</b></p><p class="k"><b>Domty Shredded Mozzarella Cheese<br>-550 gm </b></p><br><a href="cart.html"  class="cart">add to cart</a>
+ </div><div class="column3"><img src="images/meet.jpeg"><p class="price"><b>187.00 EGB</p><p class="k"><b>Balady Minced Beef<br>-1 kg</b></p><br><a href="cart.html"  class="cart">add to cart</a></div>
+ </div>
+</section>
+<br>
+<br>
+<br>
+ <section id="s">
+  <div class="column1"><img src="images/liver.jpg"><p class="price"><b>164.95 EGB</b></p><p class="k"><b>Healthiest Frozen Sliced Liver<br>850 - 1000 gm </b></p>
+ <br>
+ <a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ 
+ 
+ <div class="column2"><img src="images/chicken.jpeg"></img><p class="price"><b>149.97 EGB</b></p><p class="k"><b>Chicken Breast Fillet<br> </b></p><br><a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ <div class="column3"><img src="images/romy cheese .jpg"><p class="price"><b>99.99 EGB</p><p class="k"><b>Romy Extra Cheese<br></b></p><br><a href="cart.html"  class="cart">add to cart</a></div>
+ </section>
+  <section id="s">
+ <div class="column1"><img src="images/1700Wx1700H_426174_main.jpg"><p class="price"><b>189.95 EGB</b></p><p class="k"><b>Balady Beef Cubes<br></b></p>
+ <br>
+ <a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ 
+ 
+ <div class="column2"><img src="images/362884_main.jpeg"></img><p class="price" ><b>100.00 EGB</b></p><p class="k"><b>Irish Cheddar Cheese<br> </b></p><br><a href="cart.html" class="cart">add to cart</a>
+ </div>
+ <div class="column3"><img src="images/468518_main.jpeg"><p class="price"><b>8.99 EGB</p><p class="k"><b>Almarai Treats Strawberry Yogurt<br>- 105 gm</b></p><br><a href="cart.html"  class="cart">add to cart</a></div> 
+ 
+ </section>
+ 
+ 
+ <h2 id="fruit">FRUIT & VEGETABLES</h2>
+ <section id="s">
+   <div class="column1"><img src="images/1700Wx1700H_157967_main.jpg">
+ <p class="price"><b>4.30 EGB</b></p>
+ <p class="k"><b>potato<br></b></p>
+ <br>
+ <a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ 
+ 
+ <div class="column2"><img src="images/1700Wx1700H_32485_main.jpg"><p class="price" ><b>5.00 EGB</b></p>
+ <p class="k"><b>Adalia lemon <br> </b></p><br><a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ <div class="column3"><img src="images/1700Wx1700H_32551_main.jpg"><p class="price"><b>20.47 EGB</p><p class="k"><b>Cantaloupe<br></b></p><br><a href="cart.html"  class="cart">add to cart</a></div>
+ </section>
+ <section id="s">
+   <div class="column1"><img src="images/1700Wx1700H_32558_main (1).jpg">
+ <p class="price"><b>18.30 EGB</b></p>
+ <p class="k"><b>Guava<br></b></p>
+ <br>
+ <a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ 
+ 
+ <div class="column2"><img src="images/1700Wx1700H_32588_main.jpg"><p class="price" ><b>89.00 EGB</b></p>
+ <p class="k"><b>Avocado <br> </b></p><br><a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ <div class="column3"><img src="images/1700Wx1700H_32594_main.jpg"><p class="price"><b>7.47 EGB</p><p class="k"><b>Cucumber<br></b></p><br><a href="cart.html"  class="cart">add to cart</a></div>
+ </section>
+ <section id="s">
+  <div class="column1"><img src="images/1700Wx1700H_32606_main.jpg"><p class="price"><b>8.47 EGB</b></p><p class="k"><b>big eggplants <br></b></p>
+ <br>
+ <a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ 
+ 
+ <div class="column2"><img src="images/32497_main.jpeg"></img><p class="price"><b>4.97 EGB</b></p><p class="k"><b>Mandarin Murket<br> </b></p><br><a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ <div class="column3"><img src="images/32763_main.jpeg"><p class="price"><b>11.47 EGB</p><p class="k"><b>white onion<br></b></p><br><a href="cart.html"  class="cart">add to cart</a></div>
+ </section>
+ <section id="s">
+ <div class="column1"><img src="images/74803_main.jpeg"><p class="price"><b>92.00 EGP</b>-6.5 kg</p><p class="k"><b>orange for juice<br></b></p>
+ <br>
+ <a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ 
+ 
+ <div class="column2"><img src="images/429497_main.jpeg"></img><p class="price"><b>30.00 EGB</b></p><p class="k"><b>European Apples<br> </b></p><br><a href="cart.html" class="cart">add to cart</a>
+ </div>
+ <div class="column3"><img src="images/430466_main.jpeg"><p class="price"><b>3.99 EGB</p><p class="k"><b>Coriander<br> - 50gm</b></p><br> <a href="cart.html"  class="cart">add to cart</a>
+ 
+ </section>
+ <h2 id="snacks">SNACKS & DRINKS</h2>
+ <section id="s">
+   <div class="column1"><img src="images/red bull.jpg">
+ <p class="price"><b>31.30 EGB</b></p>
+ <p class="k"><b>Red bull energy drink<br>-250 ml</b></p>
+ <br>
+ <a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ 
+ 
+ <div class="column2"><img src="images/oreo.jpg"><p class="price"><b>50.00 EGB</b></p>
+ <p class="k"><b>oreo <br> </b></p><br><a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ <div class="column3"><img src="images/hohos.jpg"><p class="price"><b>20.47 EGB</p><p class="k">Hohos Cream Bigger Size<br>-60gm-12pieces<br></p><a href="cart.html"  class="cart">add to cart</a></div>
+ </section>
+ 
+ <section id="s">
+     <div class="column1"><img src="images/juhayna .jpeg">
+ <p class="price"><b>28.30 EGB</b></p>
+ <p class="k"><b>Juhayna Classic Apple Juice<br>-1 liter</b></p>
+ <br>
+ <a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ 
+ 
+ <div class="column2"><img src="images/v7.jpg"></img><p class="price"><b>13.00 EGB</b></p><p class="k"><b>Pina Colada Sparkling Drink<br> 300 ml</b></p><br><a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ <div class="column3"><img src="images/molto.jpg"><p class="price"><b>4.47 EGB</p><p class="k"><b>Molto Mini Chocolate Croissants<br>30 gm</b></p><br><a href="cart.html"  class="cart">add to cart</a></div>
+ </div>
+ </section>
+ <section id="s">
+  <div class="column1"><img src="images/fayrouz.jpeg"><p class="price"><b>10.47 EGB</b></p><p class="k"><b>Fayrouz Pineapple Malt Drink<br>250 ml</b></p>
+ <br>
+ <a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ 
+ 
+ <div class="column2"><img src="images/biscuit.jpeg"></img><p class="price"><b>38.97 EGB</b></p><p class="k"><b>ULKER TEA BISCUIT<br> </b></p><br><a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ <div class="column3"><img src="images/domty juice .jpeg"><p class="price"><b>33.47 EGB</p><p class="k"><b>Domty Mango Juice<br>-1 liter</b></p><br><a href="cart.html"  class="cart">add to cart</a></div>
+ </section>
+ <section id="s">
+ <div class="column1"><img src="images/1700Wx1700H_590886_main.jpg"><p class="price"><b>105.00 EGP</b></p><p class="k"><b>Cadbury Chocolate with Hazelnut<br>- 35 gram - 5 pieces</b></p>
+ <br>
+ <a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ 
+ 
+ <div class="column2"><img src="images/kinder.jpg"></img><p class="price"><b>34.00 EGB</b></p><p class="k"><b>Kinder Milk Chocolate Bars<br>- 50 g </b></p><br><a href="cart.html" class="cart">add to cart</a>
+ </div>
+ <div class="column3"><img src="images/tiger.jpeg"></img><p class="price"><b>10.00 EGB</b></p><p class="k"><b>Tiger Excellence Fried Potato Chips<br></b></p><br><a href="cart.html" class="cart">add to cart</a>
+ </div>
+ 
+ </section>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <h2 id="bakery">BAKERY</h2>
+ <section id="s">
+  <div class="column1"><img src="images/croisson .jpeg"><p class="price"><b>94.47 EGB</b></p><p class="k"><b>Croissant<br>- Plain - 10 Pieces</b></p>
+ <br>
+ <a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ 
+ 
+ <div class="column2"><img src="images/cookies.jpeg"></img><p class="price"><b>74.97 EGB</b></p><p class="k"><b>Oat Cookies Jar <br> </b></p><br><a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ <div class="column3"><img src="images/balady bread .jpeg"><p class="price"><b>4.47 EGB</p><p class="k"><b>Large Baladi Bread<br>1 piece</b></p><br><a href="cart.html"  class="cart">add to cart</a></div>
+ </section>
+ <section id="s">
+     <div class="column1"><img src="images/bakery.jpeg">
+ <p class="price"><b>154.30 EGB</b></p>
+ <p class="k"><b>Muffin<br>- Assorted - 12 Pieces</b></p>
+ <br>
+ <a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ 
+ 
+ <div class="column2"><img src="images/Donuts .jpg"></img><p class="price"><b>69.00 EGB</b></p><p class="k"><b>Assorted Donuts <br>- 5 Pieces</b></p><br><a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ <div class="column3"><img src="images/fteer.jpg"><p class="price"><b>26.47 EGB</p><p class="k"><b>Feteer<br>small</b></p><br><a href="cart.html"  class="cart">add to cart</a></div>
+ </section>
+ <br>
+  <br>
+   <br>
+ <section id="s">
+  <div class="column1"><img src="images/feno.jpg"><p class="price"><b>44.47 EGB</b></p><p class="k"><b>Medium Fino <br>- 10 Pieces</b></p>
+ <br>
+ <a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ 
+ 
+ <div class="column2"><img src="images/sweets.jpeg"></img><p class="price" ><b>180.97 EGB</b></p><p class="k"><b>Koueider Mix Oriental Sweets<br>small </b></p><br><a href="cart.html"  class="cart">add to cart</a>
+ </div>
+ <div class="column3"><img src="images/tost.jpg"><p class="price"><b>39.47 EGB</p><p class="k"><b>white tost<br></b></p><br><a href="cart.html"  class="cart">add to cart</a></div>
+ </section>
+ <footer>
+  <h2 class="foot">Waiting For You On Our Instagram Page</h2>
+  <i id="inst" class="fa fa-instagram"></i>
+  <h4>@TRENDYYOU</h4>
+  <br>
+  <p id="foot">Thank You For Visiting Our Website</p>
+ </footer>
+ <!-- <div class="column1"><img src="img/74803_main.jpeg"><p class="price"><b>92.00 EGP</b>-6.5 kg</p><p class="k"><b>orange for juice<br></b></p>
+ <br>
+ <a href="add to cart"  class="cart">add to cart</a>
+ </div>
+ 
+ 
+ <div class="column2"><img src="img/429497_main.jpeg"></img><p><b>30.00 EGB</b></p><p class="k"><b>European Apples<br> </b></p><br><a href="add to cart" class="cart">add to cart</a>
+ </div>--> 
+ 
+</body>
+</html>
+
+
+
+
+  
+   <!-- <div>
+        <div class="grid">
+       <img src="img/429497_main.jpeg">
+       <br>mariam</div>
+    <div class="grid"><img src="img/74803_main.jpeg"><br>atef</div>
+    <div class="grid"><img src="img/32497_main.jpeg"><br>adly</div>
+    </div>

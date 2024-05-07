@@ -1,0 +1,192 @@
+header,footer{
+    color:#815423;
+    background-color:#d3c3b2;
+    align-content: center;
+    text-align: center;
+    width:100%;
+}
+#list{
+    position:absolute;
+    top:8px;
+    left:16px;
+    font-size:30px;
+    color:#815423;
+}
+#list:hover{
+   color: #b79677;
+}
+nav{
+    background-color:#d3c3b2;
+    text-align: center;
+}
+ul{
+    list-style:none;
+    font-size:20px;
+}
+li{
+    display:inline;
+    margin: 80px;
+}
+#link{
+    color: #815423;
+    margin-right:70px;
+}
+#link:hover{
+    color: #ebe1d1;
+}
+h1{
+    font-size:400%;
+}
+body{
+    background-color: #ebe1d1;
+}
+#fix{
+    position:fixed;
+    z-index:1;
+    width:100%;
+    height: 100px;
+}
+.body{ 
+    padding-top:150px;
+    color: #815423;
+}
+img:hover{
+    opacity:0.6;
+}
+button{
+    border:none;
+    border-radius:5px;
+    background-color: #815423;
+    color: #ebe1d1;
+    padding:5px;
+    margin-left:82px;
+}
+button:hover{
+    background-color: #b79677;
+}
+#inst{
+    font-size:30px;
+}
+footer{
+    height:200px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 1100px;
+}
+img{
+    width: calc(50/3);
+}
+p{
+    text-align: center;
+}
+#women,#kids,#men{
+    text-align: center;
+    font-size:50px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #815423;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ebe1d1;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  /* dark mode */
+  .dark-mode {
+    background-color:black;
+    color: white;
+  
+  }
+  .dark-mode header{
+      color: white;
+      background-color:#1E1C1F;
+  }
+  .dark-mode p{
+      color: white;
+  }
+  .dark-mode nav{
+      color: white;
+      background-color:#1E1C1F;
+  }
+  .dark-mode li a{
+      color: white;
+  }
+  
+  .dark-mode a{
+      color:white;
+       /* background-color:#BA55D3 ;  */
+  }
+  
+  #dark-mode-toggle{
+    position:absolute;
+    top:8px;
+    right: 16px;
+    font-size:40px;
+      
+  }
+  #dark-mode-toggle:hover{
+    color: #b79677;
+  }
+  .dark-mode #dark-mode-toggle{
+      color:#BA55D3;
+  }
+  .dark-mode #list{
+      color:#BA55D3;
+  }
+  
+  .dark-mode button{
+      background-color:#BA55D3;
+  }
+  .dark-mode footer{
+      color:white;
+      background-color: #1E1C1F;
+  }
+  .dark-mode #link{
+      color:white;
+  }
+  .dark-mode #mylist{ 
+    background-color:#BA55D3;  
+  }
+  .dark-mode #women,.dark-mode #men,.dark-mode #kids{
+      color:white;
+  }
+  /*  */

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Color Changer</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <script src="profile.js"></script>  
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #EBE1D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 800px; 
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .mobile-info {
+    width: 40%; 
+    text-align: left;
+  }
+  .mobile-info p {
+    margin-top: 0;
+  }
+  .mobile-image {
+    width: 100%; 
+    max-width: 400px; 
+    border: 2px solid #333;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+  }
+  .mobile-image:hover {
+    border-color: #ff5733;
+  }
+  .color-picker {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .color-option:hover {
+    transform: scale(1.2);
+  }
+  /* dark mode */
+  .dark-mode {
+  background-color:black;
+  color: white;
+
+}
+.dark-mode p{
+    color: white;
+}
+.dark-mode .iphone{
+    color: #BA55D3;
+}
+
+
+#dark-mode-toggle{
+   
+    position:absolute;
+    top:8px;
+    right: 16px;
+    font-size:40px;
+    
+  
+}
+.dark-mode #dark-mode-toggle{
+    color:#BA55D3;
+}
+
+
+/*  */
+
+</style>
+</head>
+<body>
+    <i class="fa fa-adjust"  id="dark-mode-toggle"></i>
+<div class="container">
+  <div class="mobile-info">
+    <p style="font-size: 30px;" >
+        <p class="iphone">
+       <b>i phone 13 </b style="margin:30px"></p>
+       <br>
+       lightning‑fast chip. A leap in battery life. And all‑new photo and video capabilities. iPhone 13 lets you do things you never could before.
+    </p>
+    <div class="color-picker">
+      <div class="color-option" style="background-color:rgb(238, 86, 170)" onclick="changeColor('bink.webp')"></div>
+      <div class="color-option" style="background-color:rgb(79, 79, 230)" onclick="changeColor('blue.webp')"></div>
+      <div class="color-option" style="background-color:rgb(14, 117, 14)" onclick="changeColor('green.webp')"></div>
+      <div class="color-option" style="background-color:gray" onclick="changeColor('gray.webp')"></div>
+      <div class="color-option" style="background-color:white" onclick="changeColor('white.webp')"></div>
+    </div>
+  </div>
+  <div class="mobile-info">
+    <img src="Mobile_phones/iphone/iphone 13 pro max baby blue.jpg" alt="Mobile" class="mobile-image" id="mobile">
+  </div>
+</div>
+
+<script>
+  function changeColor(imageSrc) {
+    document.getElementById('mobile').src = imageSrc;
+  }
+</script>
+
+</body>
+</html>
